@@ -78,6 +78,8 @@ header {
     font-weight: 600; /* Épaisseur de la police */
     transition: 0.6s ease; /* Transition pour les effets au survol */
     border-radius: 0.625rem; /* Coins arrondis */
+    display: block;
+    white-space: nowrap;
 }
 
 .Navbar ul li a:hover {
