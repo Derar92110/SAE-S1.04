@@ -57,27 +57,27 @@ header {
 
 
 .Navbar {
-    margin-bottom: 1000px; /* Marges pour le placement */
-    margin-left: 1300px; /* Décalage à gauche */
+    margin-bottom: 62.5rem; /* Marges pour le placement */
+    margin-left: 81.25rem; /* Décalage à gauche */
 }
 
 .Navbar ul {
     list-style: none; /* Suppression des puces */
     float: right; /* Alignement à droite */
     display: flex; /* Flexbox pour la disposition */
-    margin-top: 20px; /* Espacement au-dessus */
+    margin-top: 1.25rem; /* Espacement au-dessus */
 }
 
 .Navbar ul li a {
     text-decoration: none; /* Suppression du soulignement */
     color: #fff; /* Couleur du texte */
-    padding: 15px 20px; /* Espacement intérieur */
+    padding: 0.9375rem 1.25rem; /* Espacement intérieur */
     text-transform: uppercase; /* Mise en majuscules */
-    border: 3px solid transparent; /* Bordure invisible */
-    margin: 10px; /* Espacement entre les éléments */
+    border: 0.1875rem solid transparent; /* Bordure invisible */
+    margin: 0.625rem; /* Espacement entre les éléments */
     font-weight: 600; /* Épaisseur de la police */
     transition: 0.6s ease; /* Transition pour les effets au survol */
-    border-radius: 10px; /* Coins arrondis */
+    border-radius: 0.625rem; /* Coins arrondis */
 }
 
 .Navbar ul li a:hover {
