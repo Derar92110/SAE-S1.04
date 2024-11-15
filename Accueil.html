@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- Lien vers la feuille de style CSS -->
+  <title>Compte rendu HTML SAE</title>
+</head>
+<body>
+  <header>
+    <div class="principale">
+      <!-- Logo principal du site -->
+      <div class="logo">
+        <a href="#">SAE <span>S1.04</span></a> <!-- Nom du projet et sous-titre -->
+      </div>
+
+      <!-- Barre de navigation principale -->
+      <div class="Navbar">
+        <ul>
+          <li class="active"><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Mission1.html">Mission 1</a></li>
+          <li><a href="Mission2.html">Mission 2</a></li>
+          <li><a href="Mission3.html">Mission 3</a></li>
+          <li><a href="Bilan.html">Bilan</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu hamburger avec la checkbox pour l'affichage mobile -->
+      <div>
+        <input type="checkbox" id="toggle-menu" class="checkbox-hamburger"> <!-- Checkbox pour contrôler l'affichage du menu -->
+        <label for="toggle-menu">
+          <img src="Image/hamburger.png" class="Bouton-hamburger"> <!-- Bouton hamburger (image) pour les petits écrans -->
+        </label>
+        
+        <!-- Menu hamburger visible uniquement sur mobile -->
+        <ul class="Navbar-hamburger">
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Mission1.html">Mission 1</a></li>
+          <li><a href="Mission2.html">Mission 2</a></li>
+          <li><a href="Mission3.html">Mission 3</a></li>
+          <li><a href="Bilan.html">Bilan</a></li>
+        </ul>
+      </div>   
+    </div>
+
+    <!-- Titre principal de la page -->
+    <div class="titre">
+      <h1>Accueil</h1> <!-- Titre affiché dans la section principale -->
+    </div>
+  </header>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- Lien vers la feuille de style CSS pour la mise en forme -->
+  <title>Présentation de la Saé S1-04</title>
+</head>
+<body>
+  <header>
+    <div class="principale">
+      <!-- Logo de la page avec le titre du projet -->
+      <div class="logo">
+        <a href="#">SAE <span>S1.04</span></a> <!-- Affichage du nom du projet et du numéro de la mission -->
+      </div>
+
+      <!-- Navigation principale -->
+      <div class="Navbar">
+        <ul>
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li class="active"><a href="Mission1.html">Mission 1</a></li>
+          <li><a href="Mission2.html">Mission 2</a></li>
+          <li><a href="Mission3.html">Mission 3</a></li>
+          <li><a href="Bilan.html">Bilan</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu hamburger pour l'affichage mobile -->
+      <div>
+        <input type="checkbox" id="toggle-menu" class="checkbox-hamburger">
+        <label for="toggle-menu">
+          <img src="Image/hamburger.png" class="Bouton-hamburger"> <!-- Icône du menu hamburger -->
+        </label>
+        <ul class="Navbar-hamburger">
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Mission1.html">Mission 1</a></li>
+          <li><a href="Mission2.html">Mission 2</a></li>
+          <li><a href="Mission3.html">Mission 3</a></li>
+          <li><a href="Bilan.html">Bilan</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Titre principal de la page -->
+    <div class="titre">
+      <h1>Mission 1</h1>
+    </div>
+  </header>
+
+  <!-- Section de contenu principale -->
+  <main class="principale">
+    <div class="presentationdelequipe">
+      <section>
+        <p>Ce projet a été réalisé par :</p>
+        <ul class="noms-equipe">
+          <li>Hamzaoui Derar</li>
+          <li>Mazouz Mehdi</li>
+          <li>Ben Kheilifa Elyes</li>
+          <li>Nassef Da Costa Elias</li>
+        </ul>
+      </section>
+    </div>
+
+<div class="container">
+    <div class="cle primaire">
+        <h2>Clés primaires</h2>
+        <ul>
+          <li>Onglet Fournisseur : N°fournisseur</li>
+          <li>Onglet Produit : Réf produit</li>
+          <li>Onglet Catégorie : Code catégorie</li>
+          <li>Onglet Clientèle : Code Client</li>
+          <li>Onglet Commande : N° commande</li>
+          <li>Onglet Detail Commande : N°commande et Réf produit</li>
+        </ul>
+    </div>
+    <div class="cle etrangere">
+      <h2>Clés étrangères :</h2>
+        <ul>
+          <li>Produit : N°fournisseur et Code catégorie</li>
+          <li>Commande : Code Client</li>
+          <li>DetailCommande : Réf produit et N° commande</li>
+        </ul>
+    </div>
+</div>
+
+    <div class="donneesetinformations">
+      <h2>Résumé des données et informations</h2>
+      <ul>
+        <li>3 clients nantais et 3 clients de région parisienne.</li>
+        <li>Adresse fournisseur : 22, rue H. Voiron.</li>
+        <li>7 fournisseurs en Amérique du Nord.</li>
+        <li>7 pays européens représentés parmi les fournisseurs.</li>
+        <li>Fonction la plus représentée : Représentant.</li>
+        <li>Aucun client nommé Pavbo, mais un code client PAVBO existe.</li>
+        <li>7 produits suédois listés.</li>
+        <li>Catégories de produits : 1 et 2.</li>
+        <li>Conditionnements variés : bouteilles, boîtes, cartons, pots.</li>
+      </ul>
+    </div>
+
+  <div class="bilandelexperience">
+    <section >
+      <h2>Bilan de l'expérience</h2>
+      <p>
+        La prise en main du logiciel était nouvelle, mais l’équipe a pu utiliser certains raccourcis comme la recherche d’attributs (Ctrl+F). Cependant, l'usage d'Excel pour gérer les relations s'est avéré fastidieux, et les vérifications de cohérence (doublons, valeurs manquantes) peu automatisées.
+      </p>
+    </section>
+  </div>
+  <div class="incoherences">
+      <h2>Incohérences constatées</h2>
+      <ul>
+        <li>Des variations de pays pour un même lieu (États-Unis vs. USA).</li>
+        <li>Redondances de fonctions comme "Directeur du marketing" et "Directeur du marketing international".</li>
+        <li>Différentes orthographes pour les villes (ex : "Sao Paulo").</li>
+      </ul>
+  </div>
+
+  <div class="suggestions">
+      <h2>Suggestions pour l'amélioration</h2>
+      <p>
+        Nous recommandons l'usage d'un logiciel de gestion de bases de données comme Oracle ou MySQL pour réduire les incohérences et faciliter les opérations. De plus, il est important de standardiser l'orthographe et de gérer les données manquantes.
+      </p>
+  </div>
+
+  </main>
+</body>
+<footer class="footer">
+  <div class="footer-content">
+      <p>SAE S1.04</p>
+      <p>IUT Rives de Seine - BUT informatique</p>
+      <p>&copy; 2024 - Tous droits réservés</p>
+  </div>
+</footer>
+</html>

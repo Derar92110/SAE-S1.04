@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- Lien vers la feuille de style CSS pour la mise en forme -->
+  <title>Présentation de la Saé S1-04</title>
+</head>
+<body>
+  <header>
+    <div class="principale">
+      <!-- Logo de la page avec le titre du projet -->
+      <div class="logo">
+        <a href="#">SAE <span>S1.04</span></a> <!-- Affichage du nom du projet et du numéro de la mission -->
+      </div>
+
+      <!-- Navigation principale -->
+      <div class="Navbar">
+        <ul>
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Mission1.html">Mission 1</a></li>
+          <li><a href="Mission2.html">Mission 2</a></li>
+          <li><a href="Mission3.html">Mission 3</a></li>
+          <li class="active"><a href="Bilan.html">Bilan</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu hamburger pour l'affichage mobile -->
+      <div>
+        <input type="checkbox" id="toggle-menu" class="checkbox-hamburger">
+        <label for="toggle-menu">
+          <img src="Image/hamburger.png" class="Bouton-hamburger"> <!-- Icône du menu hamburger -->
+        </label>
+        <ul class="Navbar-hamburger">
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Mission1.html">Mission 1</a></li>
+          <li><a href="Mission2.html">Mission 2</a></li>
+          <li><a href="Mission3.html">Mission 3</a></li>
+          <li><a href="Bilan.html">Bilan</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Titre principal de la page -->
+    <div class="titre">
+        <h1>Bilan des Missions</h1>
+      </div>
+    </header>
+
+    <main class="principale">
+        <!-- Présentation des missions -->
+        <section class="missions">
+          <h2>Résumé des Missions</h2>
+          <article class="mission1">
+            <h3>Mission 1 : Conception et Interrogation d'une Base de Données</h3>
+            <p>Les principales tâches comprenaient la conception de tables, l’identification des clés primaires et étrangères, et la gestion des incohérences dans les données.</p>
+          </article>
+          <article class="mission2">
+            <h3>Mission 2 : Analyse de la Base de Données et Optimisation</h3>
+            <p>Les objectifs étaient de résoudre les problèmes de données incohérentes, de performance des requêtes, et de faire des choix optimisés pour les données et les index.</p>
+          </article>
+          <article class="mission3">
+            <h3>Mission 3 : Requêtes Avancées</h3>
+            <p>Cette mission impliquait des requêtes SQL avancées pour extraire des données pertinentes, comme les chiffres d'affaires par catégorie, les fournisseurs et clients stratégiques, et les analyses de marché.</p>
+          </article>
+        </section>
+    
+        <!-- Difficultés rencontrées -->
+        <section class="difficultes">
+          <h2>Difficultés rencontrées</h2>
+          <ul>
+            <li>Incohérences dans les données, notamment pour les noms de villes et les formats des données.</li>
+            <li>Optimisation des requêtes pour des bases de données importantes, surtout pour des jointures complexes.</li>
+            <li>Utilisation de raccourcis et de logiciels non adaptés pour certaines tâches, comme Excel pour la gestion des relations.</li>
+          </ul>
+        </section>
+    
+        <!-- Améliorations et Suggestions -->
+        <section class="ameliorations">
+          <h2>Suggestions pour l'amélioration</h2>
+          <ul>
+            <li>Standardiser les formats de données et les noms pour réduire les incohérences.</li>
+            <li>Utiliser un logiciel de gestion de base de données adapté, comme MySQL ou Oracle, pour faciliter les opérations et améliorer la précision des résultats.</li>
+            <li>Optimiser les requêtes en créant des vues ou des fonctions pour des requêtes fréquemment utilisées.</li>
+            <li>Indexer les tables pour une meilleure performance dans les grandes bases de données.</li>
+          </ul>
+        </section>
+      </main>
+    
+      <!-- Pied de page -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>SAE S1.04</p>
+          <p>IUT Rives de Seine - BUT Informatique</p>
+          <p>&copy; 2024 - Tous droits réservés</p>
+        </div>
+      </footer>
+    </body>
+    </html>
+

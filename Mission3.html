@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- Lien vers la feuille de style CSS pour la mise en forme -->
+  <title>Présentation de la Saé S1-04</title>
+</head>
+<body>
+  <header>
+    <div class="principale">
+      <!-- Logo de la page avec le titre du projet -->
+      <div class="logo">
+        <a href="#">SAE <span>S1.04</span></a> <!-- Affichage du nom du projet et du numéro de la mission -->
+      </div>
+
+      <!-- Navigation principale -->
+      <div class="Navbar">
+        <ul>
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Mission1.html">Mission 1</a></li>
+          <li><a href="Mission2.html">Mission 2</a></li>
+          <li class="active"><a href="Mission3.html">Mission 3</a></li>
+          <li><a href="Bilan.html">Bilan</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu hamburger pour l'affichage mobile -->
+      <div>
+        <input type="checkbox" id="toggle-menu" class="checkbox-hamburger">
+        <label for="toggle-menu">
+          <img src="Image/hamburger.png" class="Bouton-hamburger"> <!-- Icône du menu hamburger -->
+        </label>
+        <ul class="Navbar-hamburger">
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Mission1.html">Mission 1</a></li>
+          <li><a href="Mission2.html">Mission 2</a></li>
+          <li><a href="Mission3.html">Mission 3</a></li>
+          <li><a href="Bilan.html">Bilan</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Titre principal de la page -->
+    <div class="titre">
+      <h1>Mission 3</h1>
+    </div>
+  </header>
+
+  <!-- Section de contenu principale -->
+  <main class="principale">
+    <div class="presentationdelequipe">
+      <section>
+        <p>Ce projet a été réalisé par :</p>
+        <ul class="noms-equipe">
+          <li>Hamzaoui Derar</li>
+          <li>Mazouz Mehdi</li>
+          <li>Ben Kheilifa Elyes</li>
+          <li>Nassef Da Costa Elias</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="question1">
+        <h2>Question 1</h2>
+        <p> Les requêtes visent à identifier des produits vendus à un certain
+            prix et leurs pays d'origine, à lister les pays de provenance pour certaines
+            catégories de produits, et à calculer le chiffre d'affaires par catégorie.
+        </p>
+    </div>
+
+    <div class="question2">
+        <h2>Question 2</h2>
+        <p> Cette section se concentre sur les fournisseurs de produits non
+            commandés, le nombre de produits non commandés par catégorie, et les pays
+            ayant une offre de produits importante.
+        </p>
+    </div>
+
+    <div class="question3">
+        <h2>Question 3</h2>
+        <p> Ces requêtes identifient les desserts et boissons vendus en
+            Allemagne à moins de 100 euros, les fournisseurs vendant uniquement des
+            boissons ou desserts, et ceux qui vendent les deux catégories.
+        </p>
+    </div>
+
+    <div class="question4">
+        <h2>Question 4</h2>
+        <p> Les questions explorent les clients nantais commandant en
+            Allemagne, les paires de clients de Besançon pour des livraisons groupées, et
+            identifient les clients n'ayant jamais eu la remise maximale, ainsi que les
+            produits n'ayant reçu que certaines remises.
+        </p>
+    </div>
+
+    <div class="difficultes">
+      <h2>Difficultés rencontrées</h2>
+        <ul>
+          <li>Comprendre la structure de la base de données et optimiser les requêtes pour obtenir les informations souhaitées.</li>
+          <li>Gérer les requêtes imbriquées et les jointures pour des cas complexes impliquant plusieurs tables et conditions spécifiques.</li>
+        </ul>
+    </div>
+
+    <div class="resume">
+      <h2>Résumé des questions individuelles</h2>
+      <ul>
+        <li><strong>Elyes Ben Khelifa</strong>: Identifie les villes qui commandent le plus pour mieux concentrer les moyens sur celles-ci.</li>
+        <li><strong>Elias Nassef da Costa</strong>: Analyse le nombre de produits par catégorie pour évaluer les catégories économiquement intéressantes.</li>
+        <li><strong>Mehdi Mazouz</strong>: Cherche les pays avec la plus grande concentration defournisseurs et clients, en mettant l'accent sur les fournisseurs nationaux pourréduire l'empreinte environnementale.</li>
+        <li><strong>Hamzaoui Derar</strong>: Les catégories de produits 1 et 2 sont vendues par les fournisseurs singapouriens, offrant ainsi des options pour élargir l'offre de Kdou avec ces produits.</li>
+      </ul>
+      <p>Chaque membre a proposé des requêtes SQL spécifiques à leurs questions d’intérêt personnel, en expliquant leur logique et la pertinence des résultats obtenus pour des prises de décision éclairées.</p>
+    </div>
+
+  </main>
+</body>
+<footer class="footer">
+  <div class="footer-content">
+      <p>SAE S1.04</p>
+      <p>IUT Rives de Seine - BUT informatique</p>
+      <p>&copy; 2024 - Tous droits réservés</p>
+  </div>
+</footer>
+</html>

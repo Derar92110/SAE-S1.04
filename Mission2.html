@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- Lien vers la feuille de style CSS pour la mise en forme -->
+  <title>Présentation de la Saé S1-04</title>
+</head>
+<body>
+  <header>
+  
+    <div class="principale">
+      <!-- Logo de la page avec le titre du projet -->
+      <div class="logo">
+        <a href="#">SAE <span>S1.04</span></a> <!-- Affichage du nom du projet et du numéro de la mission -->
+      </div>
+
+      <!-- Navigation principale -->
+      <div class="Navbar">
+        <ul>
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Mission1.html">Mission 1</a></li>
+          <li class="active"><a href="Mission2.html">Mission 2</a></li>
+          <li><a href="Mission3.html">Mission 3</a></li>
+          <li><a href="Bilan.html">Bilan</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu hamburger pour l'affichage mobile -->
+      <div>
+        <input type="checkbox" id="toggle-menu" class="checkbox-hamburger">
+        <label for="toggle-menu">
+          <img src="Image/hamburger.png" class="Bouton-hamburger"> <!-- Icône du menu hamburger -->
+        </label>
+        <ul class="Navbar-hamburger">
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Mission1.html">Mission 1</a></li>
+          <li><a href="Mission2.html">Mission 2</a></li>
+          <li><a href="Mission3.html">Mission 3</a></li>
+          <li><a href="Bilan.html">Bilan</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Titre principal de la page -->
+    <div class="titre">
+      <h1>Mission 2</h1>
+    </div>
+  </header>
+
+  <!-- Section de contenu principale -->
+  <main class="principale">
+    <div class="presentationdelequipe">
+      <section>
+        <p>Ce projet a été réalisé par :</p>
+        <ul class="noms-equipe">
+          <li>Hamzaoui Derar</li>
+          <li>Mazouz Mehdi</li>
+          <li>Ben Kheilifa Elyes</li>
+          <li>Nassef Da Costa Elias</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="problemes">
+        <h2>Les Problèmes Rencontrés</h2>
+        <ul>
+          <li>Incohérences dans les données : Des valeurs nulles, des doublons ou des formats de données différents nous ont entraînés des résultats inattendus.</li>
+          <li>Performance des requêtes : Pour de grandes bases de données, certaines requêtes peuvent être lentes si elles ne sont pas optimisées mais cela n'a pas été notre cas.</li>
+          <li>Complexité des requêtes : Des jointures multiples ou des sous-requêtes imbriquées peuvent rendre les requêtes difficiles à lire et à maintenir et c'est pour cette raison qu'il faut redoubler de vigilance pour ne pas faire d'erreurs d'étourderies.</li>
+        </ul>
+    </div>
+    <div class="choix-discutables">
+      <h2>Les Choix Discutables </h2>
+        <ul>
+          <li>Types de données inadéquats : L'utilisation de types de données non adaptés ne nous a pas tellement limités pour analyser mais nous avons ressenti une certaine difficulté.</li>
+          <li>Absence d'index : L'absence d'index nous ralenti considérablement quand on veut exécuter des requêtes.</li>
+        </ul>
+    </div>
+
+    <div class="ameliorations">
+      <h2>Les Améliorations </h2>
+      <ul>
+        <li>Créer des vues : Pour des requêtes complexes ou fréquemment utilisées, il peut être intéressant de créer des vues pour améliorer les performances et la lisibilité.</li>
+        <li>Utiliser des fonctions personnalisées : Pour des calculs récurrents, il peut être utile de créer des fonctions personnalisées pour mieux s'y retrouver.</li>
+        <li>Optimiser les requêtes : Analyser les plans d'exécution des requêtes pour l'optimisation.</li>
+        <li>Nettoyer les données : Corriger les erreurs et les incohérences dans les données pour améliorer la qualité des résultats, c'est logique.</li>
+        <li>Pour résumer, nous n'avons pas vraiment eu de problèmes concernant les différentes colonnes malgré qu’il y a eu beaucoup d’informations dans une seule table.</li>
+      </ul>
+    </div>
+    
+    <div class="interets">
+      <h2>Les Interêts Des Requêtes </h2>
+      <ul>
+        <li>Relation et logistique : Connaître les adresses et fonctions des fournisseurs facilite la communication et optimise la gestion logistique.</li>
+        <li>Inventaire et stratégie de vente : Identifier les produits par pays d'origine ou catégorie permet d'ajuster l'offre en fonction des besoins du marché et d’optimiser les promotions.</li>
+        <li>Analyse des clients et commandes : Savoir où se concentrent les clients ou leurs habitudes de commande permet de personnaliser les stratégies de fidélisation et d'adapter l'inventaire.</li>
+        <li>Performance des produits : Calculer des indicateurs de prix (moyen, minimum, maximum) permet de mieux positionner les produits sur le marché et de surveiller la compétitivité.</li>
+      </ul>
+    </div>
+
+  </main>
+</body>
+<footer class="footer">
+  <div class="footer-content">
+      <p>SAE S1.04</p>
+      <p>IUT Rives de Seine - BUT informatique</p>
+      <p>&copy; 2024 - Tous droits réservés</p>
+  </div>
+</footer>
+</html>

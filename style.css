@@ -1,0 +1,394 @@
+/* Bonne lecture :) */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Définition de la police */
+}
+
+body {
+    cursor: url("Image/find_magnifying_glass_icon_176383.png"), auto; /* Curseur personnalisé */
+    color: #ffffff; /* Couleur du texte */
+    background-color: #1b1f3a; /* Couleur de fond sombre */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+}
+
+/* Style de l'en-tête */
+
+header {
+    background-image: linear-gradient(rgba(63, 58, 156, 0.8), rgba(12, 12, 12, 0.8)), url(Image/starry-sky-8923215_1280.jpg);
+    height: 100vh; /* Hauteur de l'en-tête */
+    background-size: cover; /* Couverture de l'arrière-plan */
+    background-position: center; /* Centrage de l'image */
+    display: flex;
+    align-items: center; /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
+}
+
+/* Police personnalisée */
+@font-face {
+    font-family: "PoliceAkira";
+    src: url("./Police/Akira Expanded Demo.otf"); /* Charge la police Akira pour une utilisation spécifique */
+}
+
+/* Style du logo */
+
+
+.logo a {
+    color: #fff; /* Couleur du texte du logo */
+    padding: 0px 20px; /* Espacement intérieur */
+    border: 5px solid #fff; /* Bordure du logo */
+    position: absolute; /* Positionnement absolu */
+    top: 20px; /* Position du logo */
+    left: 20px; /* Position du logo */
+    text-transform: uppercase; /* Mise en majuscules */
+    text-decoration: none; /* Suppression du soulignement */
+    font-weight: 900; /* Épaisseur de la police */
+    text-shadow: rgba(0, 0, 0, 0.7); /* Ombre portée pour le texte */
+}
+
+.logo span {
+    color: rgb(255, 255, 255); /* Couleur du texte dans le span */
+    font-weight: bold; /* Épaisseur de la police */
+    font-size: 1rem; /* Taille de la police */
+}
+
+/* Style de la barre de navigation */
+
+
+.Navbar {
+    margin-bottom: 1000px; /* Marges pour le placement */
+    margin-left: 1300px; /* Décalage à gauche */
+}
+
+.Navbar ul {
+    list-style: none; /* Suppression des puces */
+    float: right; /* Alignement à droite */
+    display: flex; /* Flexbox pour la disposition */
+    margin-top: 20px; /* Espacement au-dessus */
+}
+
+.Navbar ul li a {
+    text-decoration: none; /* Suppression du soulignement */
+    color: #fff; /* Couleur du texte */
+    padding: 15px 20px; /* Espacement intérieur */
+    text-transform: uppercase; /* Mise en majuscules */
+    border: 3px solid transparent; /* Bordure invisible */
+    margin: 10px; /* Espacement entre les éléments */
+    font-weight: 600; /* Épaisseur de la police */
+    transition: 0.6s ease; /* Transition pour les effets au survol */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.Navbar ul li a:hover {
+    background: #fff; /* Fond blanc au survol */
+    color: black; /* Couleur noire du texte au survol */
+}
+
+.Navbar ul li.active a {
+    background: #fff; /* Fond blanc pour l'élément actif */
+    color: black; /* Couleur noire du texte pour l'élément actif */
+}
+
+/* Style du titre principal */
+
+.titre h1 {
+    color: #0fd3ff; /* Couleur du titre */
+    font-size: 3.5rem; /* Taille de la police */
+    font-family: "PoliceAkira"; /* Police du titre */
+    text-align: center; /* Centrage du texte */
+    text-shadow: 2px 2px 10px rgba(60, 31, 252, 0.792); /* Ombre portée pour le titre */
+}
+
+/* Section principale */
+
+
+.principale {
+    margin: 0 auto; /* Centrage de la section principale */
+}
+
+/* Positionnement du titre */
+
+.titre {
+    position: absolute; /* Positionnement absolu */
+    top: 50%; /* Placement vertical */
+    left: 50%; /* Placement horizontal */
+    transform: translate(-50%, -50%); /* Centrage */
+}
+
+/* Titre principal */
+
+.titre h1 {
+    color: #fff; /* Couleur du titre */
+    font-size: 70px; /* Taille du titre */
+    font-family: "PoliceAkira"; /* Police du titre */
+    text-align: center; /* Centrage du texte */
+}
+
+/* Bouton hamburger */
+
+.Bouton-hamburger {
+    display: none; /* Masqué par défaut */
+    width: 60px; /* Largeur du bouton */
+    position: absolute; /* Positionnement absolu */
+    top: 50px; /* Placement du bouton */
+    right: 120px; /* Décalage à droite */
+}
+
+/* Menu hamburger caché */
+
+.Navbar-hamburger {
+    display: none; /* Masqué par défaut */
+    position: absolute; /* Positionnement absolu */
+    top: 100px; /* Placement du menu */
+    right: 10px; /* Décalage à droite */
+    width: 250px; /* Largeur du menu */
+    background: rgba(255, 255, 255, 0.1); /* Fond transparent */
+    backdrop-filter: blur(15px); /* Flou de l'arrière-plan */
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Cacher le débordement */
+}
+
+.Navbar-hamburger li {
+    padding: 0.7rem; /* Espacement intérieur */
+    display: flex; /* Flexbox pour la disposition */
+    align-items: center; /* Alignement vertical */
+    justify-content: center; /* Alignement horizontal */
+}
+
+.checkbox-hamburger {
+    display: none; /* Masqué par défaut */
+}
+
+/* Affichage du menu hamburger lorsque la case est cochée */
+
+.checkbox-hamburger:checked + label + .Navbar-hamburger {
+    display: block; /* Afficher le menu */
+}
+
+/* Sections principales */
+
+
+main section {
+    background: #252946; /* Couleur de fond des sections */
+    color: #ffffff; /* Couleur du texte */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 2rem; /* Espacement intérieur */
+    margin: 2rem auto; /* Marges verticales et centrage */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre portée */
+    transition: 0.3s ease; /* Transition pour les effets */
+}
+
+main section:hover {
+    transform: translateY(-10px); /* Effet de soulèvement au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Ombre renforcée au survol */
+}
+
+/* Présentation de l'équipe */
+
+
+.presentationdelequipe {
+    background-color: rgba(25, 34, 60, 0.9); /* Couleur de fond */
+    padding: 4rem; /* Espacement intérieur */
+    border-radius: 12px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Ombre portée */
+    width: 60%; /* Largeur de la section */
+    margin: 0 auto; /* Centrage de la section */
+    margin-top: 20px; /* Marges supérieures */
+}
+
+.presentationdelequipe p {
+    font-size: 1.6rem; /* Taille de la police */
+    margin-bottom: 1rem; /* Espacement inférieur */
+    color: #0fd3ff; /* Couleur du texte */
+    font-weight: bold; /* Épaisseur de la police */
+}
+
+.noms-equipe li {
+    color: #ffffff; /* Couleur du texte pour les membres de l'équipe */
+    font-size: 1.2rem; /* Taille de la police */
+    font-weight: 500; /* Épaisseur de la police */
+}
+
+.cle, .donneesetinformations, .bilandelexperience, .incoherences, .suggestions, .problemes, .choix-discutables, .ameliorations, .interets, .question1, .question2, .question3, .question4, .difficultes, .resume, .missions {
+    background: rgba(30, 35, 60, 0.8); /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    padding: 2rem; /* Espacement intérieur */
+    border-radius: 10px; /* Coins arrondis */
+    margin-top: 20px; /* Marges supérieures */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ombre portée */
+    transition: transform 0.3s ease; /* Transition pour les effets */
+    margin-left: 20px; /* Marges à gauche */
+    margin-right: 20px; /* Marges à droite */
+    border-radius: 15px; /* Coins arrondis */
+}
+
+.cle:hover, .donneesetinformations:hover, .bilandelexperience:hover, .incoherences:hover, .suggestions:hover, .problemes:hover, .choix-discutables:hover, .ameliorations:hover, .interets:hover, .question1:hover, .question2:hover, .question3:hover, .question4:hover, .difficultes:hover, .resume:hover, .missions:hover {
+    transform: translateY(-10px); /* Effet de soulèvement au survol */
+}
+
+.cle h2, .donneesetinformations h2, .bilandelexperience h2, .incoherences h2, .suggestions h2, .problemes h2, .choix-discutables h2, .ameliorations h2, .interets h2, .question1 h2, .question2 h2, .question3 h2, .question4 h2, .difficultes h2, .resume h2, .missions h2 {
+    font-size: 2rem; /* Taille du titre */
+    margin-bottom: 1.5rem; /* Espacement inférieur */
+    color: #0fd3ff; /* Couleur du titre */
+    text-align: center; /* Centrage du texte */
+    text-shadow: 1px 1px 6px rgba(15, 211, 255, 0.5); /* Ombre portée pour le titre */
+}
+
+.cle ul, .donneesetinformations ul, .bilandelexperience p, .incoherences ul, .suggestions p, .problemes ul, .choix-discutables ul, .ameliorations ul, .interets ul, .question1 p, .question2 p, .question3 p, .question4 p, .difficultes ul, .resume ul, .resume p, .missions p {
+    background: #2f365f; /* Couleur de fond pour les listes et paragraphes */
+    padding: 1.5rem; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+.cle ul li, .donneesetinformations ul li, .incoherences ul li, .suggestions p, .problemes ul li, .choix-discutables ul li, .ameliorations ul li, .interets ul li {
+    font-size: 1.1rem; /* Taille de la police */
+    color: #ddd; /* Couleur du texte */
+}
+
+.suggestions, .interets {
+    margin-bottom: 30px; /* Marges inférieures */
+}
+
+.resume p {
+    padding-left: 10%;
+    margin-top: 30px; /* Marges supérieures */
+}
+
+.missions h3 {
+    margin-top: 30px; /* Marges supérieures */
+    margin-bottom: 30px; /* Marges inférieures */
+}
+
+/* Pied de page */
+
+
+.footer {
+    background: #0b0e1d; /* Couleur de fond du pied de page */
+    color: #ffffff; /* Couleur du texte */
+    padding: 30px 0; /* Espacement intérieur */
+    text-align: center; /* Centrage du texte */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Ombre portée */
+}
+
+.footer-content p {
+    font-size: 1rem; /* Taille de la police */
+    color: #7a86c0; /* Couleur du texte */
+}
+
+.footer-content p:first-child {
+    color: #0fd3ff; /* Couleur du texte pour le premier enfant */
+    font-weight: bold; /* Épaisseur de la police */
+    font-size: 1.2em; /* Taille du texte */
+    margin-bottom: 10px; /* Marges inférieures */
+}
+
+.footer-content p:last-child {
+    font-size: 0.9em; /* Taille du texte pour le dernier enfant */
+}
+
+/* Ombree et effets de transition */
+.Navbar-hamburger, .Bouton-hamburger img {
+    filter: drop-shadow(0 0 5px #170fff7e); /* Ombre portée */
+    transition: transform 0.3s ease; /* Transition pour les effets */
+}
+
+.Navbar-hamburger li a:hover {
+    color: #0fd3ff; /* Couleur au survol */
+}
+
+/* Effets responsifs pour mobile */
+
+
+@media screen and (max-width: 1500px) {
+
+    .Bouton-hamburger {
+        display: block; /* Afficher le bouton hamburger */
+        width: 70px; /* Taille du bouton en largeur */
+    }
+
+    .Navbar-hamburger {
+        margin-top: 30px; /* Espacement au-dessus de la navigation */
+        margin-right: 10px; /* Décalage vers la droite */
+        width: 275px; /* Largeur de la navigation hamburger */
+        height: 350px; /* Hauteur définie pour le conteneur */
+    }
+
+    .Navbar-hamburger li a {
+        color: #fff; /* Texte blanc */
+        font-weight: bold; /* Met le texte en gras pour une meilleure lisibilité */
+        text-decoration: none; /* Supprime le soulignement du lien */
+        margin-top: 10px; /* Espacement vertical entre les liens */
+        padding: 5px 30px; /* Espacement interne : haut/bas 5px, gauche/droite 30px */
+    }
+
+    .Navbar {
+        display: none; /* Masquer la barre de navigation */
+    }
+    .titre h1 {
+        font-size: 50px; /* Taille du titre sur mobile */
+    }
+    
+    .container {
+        display: none; /* Masque complètement le conteneur (Pour l'accueil du coup) */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .titre h1 {
+        font-size: 33px; /*Une taille de 33 pixels pour cette taille d'écran*/
+    }
+}
+
+@media screen and (max-width: 865px) {
+
+    .Bouton-hamburger {
+        display: block; /* Afficher le bouton hamburger */
+        width: 130px; /* Largeur du bouton */
+        position: absolute; /* Positionnement absolu */
+        top: 70px; /* Placement du bouton */
+        left: 50%; /* Centrage horizontal */
+        transform: translateX(-50%); /* Centrer par rapport au milieu */
+    }
+
+    .Navbar {
+        display: none; /* Masquer la barre de navigation */
+    }
+
+    .titre h1 {
+        display: none; /* Masquer le titre sur mobile */
+    }
+
+    .Navbar-hamburger {
+        display: none; /* Masquer le menu hamburger par défaut */
+        position: absolute; /* Positionnement absolu */
+        top: 200px; /* Placement du menu */
+        width: 100%; /* Largeur du menu */
+        background: rgba(255, 255, 255, 0.1); /* Fond transparent */
+        backdrop-filter: blur(15px); /* Flou de l'arrière-plan */
+        overflow: hidden; /* Cacher le débordement */
+        left: 0; /* Alignement à gauche */
+        bottom: 0; /* Alignement en bas */
+        height: 660px ; /*Longueur du menu hamburger*/
+        
+    }
+
+    .Navbar-hamburger li {
+        padding: 0.9rem; /* Espacement intérieur */
+        display: flex; /* Flexbox pour la disposition */
+        align-items: center; /* Alignement vertical */
+        justify-content: center; /* Alignement horizontal */
+        font-size: 1.7rem; /* Taille de la police */
+        margin-top: 25px; /* Ajoute un espacement vertical entre chaque élément de la liste */
+    }
+
+    .Navbar-hamburger li a {
+        padding: 10px 40% 10px 40%; /* Espacement interne : 10px en haut et en bas, 40% à gauche et à droite */
+    }
+    
+    .container {
+        display: none; /* Masque complètement le conteneur (Pour l'accueil du coup) */
+    }
+}
+
